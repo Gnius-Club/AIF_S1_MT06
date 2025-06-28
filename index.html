@@ -1,24 +1,286 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 6: Planificando la Estructura Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 6: Planificando la Estructura Inteligente</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes inicien un nuevo proyecto enfocado en mecanismos y partes móviles.</li>
+                                        <li>Que comprendan conceptualmente el Diseño Generativo y la Optimización Topológica.</li>
+                                        <li>Que usen la IA como inspiración para diseñar un brief y un boceto de un proyecto mecánico, identificando oportunidades de optimización.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un nuevo "Brief de Diseño Mecánico" que incluya nombre y objetivo del proyecto.</li>
+                                        <li>Un boceto a mano del mecanismo general.</li>
+                                        <li>Un boceto detallado de la pieza clave identificada para optimización, mostrando un diseño inspirado en la lógica del Diseño Generativo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Papel y lápices para bocetar.</li>
+                                        <li>Un editor de texto o documentos para el brief.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo está operativo y la conexión a internet es estable.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender claramente el concepto de Diseño Generativo/Optimización Topológica. La clave es explicarlo como "eliminar material innecesario para dejar solo la estructura esencial".</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener listas las imágenes de comparación (pieza sólida vs. pieza optimizada) para mostrar durante el AI GYM. Tener a mano un ejemplo de un hueso o ala de pájaro para la introducción.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer un tono profesional e introducir el Módulo 2, enfocado en el movimiento y las estructuras inteligentes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la nueva fase del curso: pasar de objetos estáticos a sistemas dinámicos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, directores. Han dominado la creación de piezas estáticas. Ahora, introducimos el movimiento. Un mecanismo no es más que un conjunto de piezas estáticas diseñadas para interactuar. Pero antes de ensamblar, debemos pensar en la inteligencia inherente a cada pieza. ¿Cómo puede ser una pieza más fuerte, ligera y eficiente? Hoy, exploraremos cómo la IA puede rediseñar la naturaleza misma de las estructuras.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 6', seguido de su nombre, perfil y gustos. Esperen su confirmación para comenzar el Módulo 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Presentar el desafío de los mecanismos y el concepto avanzado de Diseño Generativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Nuevo Desafío y el Diseño Generativo ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce la necesidad de piezas ligeras y resistentes, presentando el Diseño Generativo como solución.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Módulo nuevo, proyecto nuevo. Esta vez, el foco está en la interacción entre partes: bisagras, palancas, engranajes. Un buen mecanismo requiere piezas ligeras y resistentes. La naturaleza es la maestra en esto, como ven en un hueso o el ala de un pájaro. Hoy, les presentaré un concepto avanzado: el Diseño Generativo. Es un proceso donde, en lugar de diseñar la pieza ustedes mismos, le dicen a la IA las restricciones y la IA genera miles de opciones optimizadas. Es como tener a la evolución biológica como socio de diseño.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es conceptual y estratégico. Al final, podrán decir: <strong>'Yo entiendo el concepto de Diseño Generativo y he creado un brief de diseño y un boceto para un nuevo proyecto mecánico, identificando una pieza clave que podría ser optimizada por la IA.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Alfabetización en Diseño Generativo) ⏰ 15 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender qué es el Diseño Generativo y cómo usarlo como inspiración conceptual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Rol de Xolo y Explicación del Proceso ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre su rol de Arquitecto de Sistemas y cómo funciona la Optimización Topológica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entramos al A.I. GYM. El rol de Xolo evoluciona. Es un arquitecto de sistemas. Consúltenle: <strong>'Xolo, explícame tu rol como arquitecto de sistemas y el proceso de la Optimización Topológica.'</strong> Observen con atención las imágenes comparativas que mostraré mientras leen su respuesta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: IA como Inspiración Estructural ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los estudiantes consultan a Xolo sobre cómo aplicar conceptualmente esta lógica en sus bocetos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy no usaremos un software de Diseño Generativo, pero sí el concepto como inspiración. Para entender cómo, pregúntenle a Xolo: <strong>'Xolo, ¿cómo puedo usar las formas del Diseño Generativo como inspiración para mi propio boceto conceptual?'</strong>. Su respuesta es la clave para la fase de Brain Spark.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Diseño del Brief Mecánico) ⏰ 10 minutos</h2>
+                <p>Fase de trabajo práctico donde los estudiantes idean un mecanismo, lo documentan en un brief y lo bocetan con inspiración generativa.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ideación, Brief y Boceto Conceptual ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes trabajan de forma individual o en equipo para crear el entregable de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Tienen 10 minutos. Primero, ideen un mecanismo simple. Segundo, creen un nuevo documento para su "Brief de Diseño Mecánico" con su título y objetivo. Tercero, inicien un diálogo con Xolo para analizar la estructura. Él les ayudará a identificar la pieza candidata a la optimización. Finalmente, dibujen su boceto: uno general del ensamblaje y uno detallado de la pieza clave, aplicando la lógica de eliminar material innecesario que vimos. Manos a la obra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir los briefs y bocetos, enfocándose en la identificación de oportunidades de optimización.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión individual sobre el proceso de identificación y bocetado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su brief y sus bocetos. Prepárense para explicar: <strong>¿Qué mecanismo eligieron y, crucialmente, qué pieza identificaron para la optimización y por qué?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Los estudiantes comparten y explican sus briefs y bocetos en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, presenten su proyecto a su compañero. Expliquen el mecanismo, muestren sus bocetos y justifiquen por qué eligieron esa pieza específica para la optimización. Muestren cómo intentaron aplicar la lógica generativa en su boceto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador recoge ejemplos y consolida el aprendizaje, estableciendo la mentalidad de arquitecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Volvemos al grupo. ¿Un par de equipos que quieran compartir su pieza candidata? Han dado un paso fundamental. Ya no solo piensan en cómo se ve una pieza, sino en cómo *funciona* y cómo puede ser intrínsecamente más *inteligente*. Han identificado oportunidades de optimización antes de modelar un solo milímetro. Esta visión de arquitecto es lo que diferencia el diseño amateur del profesional. Con estos briefs, estamos listos para modelar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
